@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #FFFFFF;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.brand {
+    color: #707767;
+    font-weight: bold;
+}
+
+.Home {
+    background-color: #E8E6D7;
+}
+
+.card {
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.noscale:hover {
+    transform: scale(1);
+}
+
+.card h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #707767;
+}
+
+.card p {
+    line-height: 5px;
+    color: #B0AA98;
+    text-decoration: none;
+}
+
+.noscale p {
+    line-height: 20px;
+}
+
+.noscale .center {
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'quran';
+    src: url(./ar-Othmani.ttf);
+}
+
+.noscale h5 {
+    text-align: right;
+    font-family: 'quran';
+    font-size: 30px;
+}
+
+
+@media screen and (max-width:600px) {
+    .noscale h5 {
+        text-align: right;
+        font-family: 'quran';
+        font-size: 25px;
+    }
+}
+
+.footer {
+    background-color: #707767;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #E8E6D7;
+}
+
+.linkto:hover {
+    text-decoration: none;
+}
+
+.detail {
+    background-color: #B0AA98;
+    min-height: 100vh;
+}
