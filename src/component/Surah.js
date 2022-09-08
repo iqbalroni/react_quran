@@ -12,7 +12,7 @@ class Surah extends Component {
     return (
       <div>
         <ReactAudioPlayer className="audioclass" src={LinkAudio} controls />
-        {this.props.number == 1 ? (
+        {this.props.number === 1 ? (
           <div></div>
         ) : (
           <Card className="noscale shadow mt-4 text-center" body>
