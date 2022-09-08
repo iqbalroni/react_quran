@@ -1,12 +1,17 @@
 import Card from "react-bootstrap/Card";
 import ListQuran from "../json/quran.json";
 import React, { Component } from "react";
+import ReactAudioPlayer from "react-audio-player";
 
 class Surah extends Component {
   render() {
-    console.log(this.props.number);
+    const number =
+      "000".substring(0, "000".length - this.props.number.length) +
+      this.props.number;
+    const LinkAudio = `https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/${number}.mp3`;
     return (
       <div>
+        <ReactAudioPlayer className="audioclass" src={LinkAudio} controls />
         {this.props.number == 1 ? (
           <div></div>
         ) : (
@@ -18,10 +23,12 @@ class Surah extends Component {
           </Card>
         )}
 
-        {ListQuran[this.props.number - 1].verses.map((bismillah) => (
+        {ListQuran[this.props.number - 1].verses.map((bismillah, index) => (
           <Card className="noscale shadow mt-3" body>
             <h5>{bismillah.text}</h5>
-            <p>{bismillah.translation_id}</p>
+            <p>
+              {index + 1}. {bismillah.translation_id}
+            </p>
           </Card>
         ))}
       </div>
