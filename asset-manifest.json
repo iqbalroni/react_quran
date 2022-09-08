@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/react_quran/static/css/main.e99d9ec3.css",
+    "main.css": "/react_quran/static/css/main.b8c1e723.css",
     "main.js": "/react_quran/static/js/main.a94fd259.js",
     "static/media/ar-Othmani.ttf": "/react_quran/static/media/ar-Othmani.0bc3b813bbb5ae5a2e8a.ttf",
     "index.html": "/react_quran/index.html",
-    "main.e99d9ec3.css.map": "/react_quran/static/css/main.e99d9ec3.css.map",
+    "main.b8c1e723.css.map": "/react_quran/static/css/main.b8c1e723.css.map",
     "main.a94fd259.js.map": "/react_quran/static/js/main.a94fd259.js.map"
   },
   "entrypoints": [
-    "static/css/main.e99d9ec3.css",
+    "static/css/main.b8c1e723.css",
     "static/js/main.a94fd259.js"
   ]
 }
