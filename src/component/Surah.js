@@ -12,10 +12,14 @@ class Surah extends Component {
     return (
       <div>
         <ReactAudioPlayer className="audioclass" src={LinkAudio} controls />
-        {this.props.number === 1 ? (
+        {this.props.number == 1 ? (
           <div></div>
         ) : (
-          <Card className="noscale shadow mt-4 text-center" body>
+          <Card
+            style={{ border: 0, borderRadius: "10px" }}
+            className="noscale shadow mt-4 text-center"
+            body
+          >
             <h5 className="center">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</h5>
             <p className="center">
               Dengan menyebut nama Allah Yang Maha Pemurah lagi Maha Penyayang.
@@ -24,7 +28,11 @@ class Surah extends Component {
         )}
 
         {ListQuran[this.props.number - 1].verses.map((bismillah, index) => (
-          <Card className="noscale shadow mt-3" body>
+          <Card
+            style={{ border: 0, borderRadius: "10px" }}
+            className="noscale shadow mt-3"
+            body
+          >
             <h5>{bismillah.text}</h5>
             <p>
               {index + 1}. {bismillah.translation_id}

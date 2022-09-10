@@ -4,9 +4,9 @@ import React, { Component } from "react";
 class Kartu extends Component {
   render() {
     return (
-      <Card className="shadow mt-4" body>
+      <Card style={{ border: 0, borderRadius: "10px" }} className="mt-4" body>
         <h5>
-          {this.props.surah} ({this.props.arti})
+          {this.props.nomor + 1}. {this.props.surah} ({this.props.arti})
         </h5>
         <p>
           Terdapat {this.props.ayat} Ayat Dan Turun Di Kota {this.props.turun}
