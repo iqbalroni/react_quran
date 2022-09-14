@@ -1,14 +1,21 @@
 {
   "files": {
-    "main.css": "/react_quran/static/css/main.634e444a.css",
-    "main.js": "/react_quran/static/js/main.92761b20.js",
+    "main.css": "/react_quran/static/css/main.b629e18d.css",
+    "main.js": "/react_quran/static/js/main.f5d5da62.js",
+    "static/media/hipwee-200703-seibert-hagia-sophia-hero_awtsib.jpeg": "/react_quran/static/media/hipwee-200703-seibert-hagia-sophia-hero_awtsib.58ac0d17651257c45256.jpeg",
+    "static/media/profil.png": "/react_quran/static/media/profil.4a166366d7735f1d11e3.png",
     "static/media/ar-Othmani.ttf": "/react_quran/static/media/ar-Othmani.0bc3b813bbb5ae5a2e8a.ttf",
+    "static/media/praying.png": "/react_quran/static/media/praying.cd16daa6f34123346d20.png",
+    "static/media/mosque.png": "/react_quran/static/media/mosque.47b3844200720dafadf4.png",
+    "static/media/masque.png": "/react_quran/static/media/masque.cf2ea78dcc34dac7fd2f.png",
+    "static/media/kaaba.png": "/react_quran/static/media/kaaba.1c56bfcc9ca5a67c45bc.png",
+    "static/media/quran.png": "/react_quran/static/media/quran.4dfacf59050be7936d28.png",
     "index.html": "/react_quran/index.html",
-    "main.634e444a.css.map": "/react_quran/static/css/main.634e444a.css.map",
-    "main.92761b20.js.map": "/react_quran/static/js/main.92761b20.js.map"
+    "main.b629e18d.css.map": "/react_quran/static/css/main.b629e18d.css.map",
+    "main.f5d5da62.js.map": "/react_quran/static/js/main.f5d5da62.js.map"
   },
   "entrypoints": [
-    "static/css/main.634e444a.css",
-    "static/js/main.92761b20.js"
+    "static/css/main.b629e18d.css",
+    "static/js/main.f5d5da62.js"
   ]
 }
