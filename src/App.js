@@ -7,13 +7,15 @@ import NavBars from "./component/Navbar";
 import Pray from "./Pray";
 import DetailPray from "./component/DetailPray";
 import "./css/style.css";
+import HomeApp from "./HomeApp";
 
 function App() {
   return (
     <BrowserRouter>
       <NavBars />
       <Routes>
-        <Route path="/react_quran/" element={<Home />}></Route>
+        <Route path="/react_quran/" element={<HomeApp />}></Route>
+        <Route path="/react_quran/surah/" element={<Home />}></Route>
         <Route path="/react_quran/surah/:key" element={<Detail />}></Route>
         <Route path="/react_quran/story/" element={<Story />}></Route>
         <Route path="/react_quran/story/:key" element={<DetailNabi />}></Route>

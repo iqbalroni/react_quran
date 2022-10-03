@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
+import profil from "../img/profil.png";
 
 import React, { Component } from "react";
 
@@ -23,9 +24,13 @@ class NavBars extends Component {
     return (
       <Navbar fixed="top" variant="dark">
         <Container>
-          <Navbar.Brand className="brand" style={{ color: "#E2F5F3" }}>
-            IslamKu.Id
-          </Navbar.Brand>
+          <div className="brand" style={{ color: "#6F7865" }}>
+            <img className="img-profil" src={profil}></img>
+            <div className="text">
+              <p>Assalamualaikum</p>
+              <h5>IslamKu</h5>
+            </div>
+          </div>
           <div className="btn-active" onClick={this.handleKlik}>
             {this.state.status === false ? (
               <svg
@@ -64,10 +69,13 @@ class NavBars extends Component {
               this.state.status === true ? "me-auto active-navbar" : "me-auto"
             }
           >
-            <h5>Quran React</h5>
+            <h5>IslamKu.Id</h5>
 
-            <h4>Fitur Tersedia</h4>
+            {/* <h4>Fitur Tersedia</h4> */}
             <Link onClick={this.handleKlik} to="/react_quran/">
+              Home
+            </Link>
+            <Link onClick={this.handleKlik} to="/react_quran/surah/">
               Al Quran
             </Link>
             <Link onClick={this.handleKlik} to="/react_quran/story/">
@@ -80,8 +88,6 @@ class NavBars extends Component {
             <h4>Kontak Developer</h4>
             <div className="me">
               <a href="https://github.com/iqbalroni">Github</a>
-              <a href="#pricing">Instagram</a>
-              <a href="#pricing">Facebook</a>
             </div>
 
             <div className="foot">@iqbalronii</div>
@@ -93,3 +99,6 @@ class NavBars extends Component {
 }
 
 export default NavBars;
+
+// https://islamic-api-indonesia.herokuapp.com/api/data/quotes
+// https://api.myquran.com/v1/sholat/jadwal/1605/2022/09/13

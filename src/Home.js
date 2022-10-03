@@ -19,7 +19,7 @@ function Home() {
           <Link
             data-aos="fade-left"
             className="linkto"
-            to={`surah/${quran.number_of_surah}`}
+            to={`${quran.number_of_surah}`}
           >
             <Kartu
               nomor={index}
